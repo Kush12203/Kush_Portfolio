@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;600&family=Anuphan:wght@300;500;600&family=Noto+Serif+Gujarati:wght@300&family=Nunito:wght@200;300;400;700&family=PT+Serif:ital,wght@1,400;1,700&family=Poppins:ital,wght@0,200;0,300;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@800&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="Portfolio.css">
+    <script src="https://kit.fontawesome.com/534d779238.js" crossorigin="anonymous"></script>
+</head>
+
+<!-- HOME -->
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                
+                <p> <span>    </span></p>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li> 
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full stack Web Developer</p>
+                <h1>Hi ,I'm <span>Kush Patel</span><br> From India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row"> 
+                <div class="about-col-1">
+                    <img src="Kush.png" alt="Profile Pic">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a Full Stack Web Developer
+                        currently pursuing BTECH in Computer Science
+                        from KIIT University Bhubaneshwar. Currently, 
+                        I'm learning Full Stack Web Development. I have finished learning both Frontend Development (HTML, CSS, JavaScript, and DOM) and Backend Development.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Frontend</span><br> HTML , CSS and JavaScript<br> </li>
+                                <li><span>Backend</span><br> NodeJS , ExpressJS and MongoDB<br> </li>
+                                <li><span>Framework</span><br> ReactJS<br> </li>
+                                <li><span>Programming</span><br> C , C++ , SQL and Data Structures </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Current workspace </span><br> Studying</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021-current</span><br>BTECH from KIIT University Bhubnaeshwar</li>
+                                <li><span>2019-2021</span><br> Higher Secondary Education</li>
+                                <li><span>2006-2019</span> <br> Primary Secondary Education</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <!-- Services -->
+ 
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list"> 
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2> 
+                <p>I am a Full Stack Web Developer and familiar with Frontend Development (HTML,CSS and Javascript) and Backend Development (MERN stack)  </p>
+             
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Programming</h2> 
+                <p>I am trying to learn and practice programming alongside Web Development</p>
+                
+            </div>
+            <div style="background-color: #080808;">
+                
+            </div>
+        </div>
+    </div>
+ </div>
+
+ <!-- Portfolio -->
+
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Campground.jpeg" alt="">
+                <div class="layer">
+                    <h3>Search Campground</h3>
+                    <p>Developed a Campground website using NodeJS , ExpressJS , MongoDB and Bootstrap.
+                       You can add/edit your own campground with location.</p>
+                 <a href="https://searchcampgrounds.onrender.com/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Chat.jpg"  alt="">
+                <div class="layer">
+                    <h3>Realtime Chat Application</h3>
+                    <p>Developed a Realtime Chat Application using ReactJs and Socket.io.</p>
+                 <a href="https://candid-twilight-4105b4.netlify.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Quiz.webp" alt="" >
+                <div class="layer">
+                    <h3>Quiz website</h3>
+                    <p>Created a Quiz website using HTML,CSS and Javascript.</p>
+                 <a href="https://kush12203.github.io/Quiz_Website/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        <a href="https://github.com/Kush12203" target="_blank" class="btn">See More</a>
+    </div>
+ </div>
+
+
+ <!-- Contact -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i>kushpatelvk@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 6359281236</p>
+                <div class="social-icons">
+                    <a href="https://twitter.com/KushPatel__12" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/_kush_1202/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/kush1202/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Kush12203" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="Kush_Patel_Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+      <p> Copyright <i class="fa-regular fa-copyright "></i> Kush. Made with <i class="fas fa-heart"></i> by Kush Patel</p>
+    </div>
+ </div>
+
+ <!-- Javascript -->
+   <script src="Portfolio.js"></script>
+
+</body>
+
+</html>  
